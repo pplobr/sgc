@@ -1,0 +1,127 @@
+<!doctype html>
+<!--[if lt IE 9]><html class="ie"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+
+<!--
+The comment jumble above is handy for targeting old IE with CSS.
+http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+-->
+<html lang="pt-br">
+<head>
+	 <meta charset="iso-8859-1">
+	 <meta name="dcterms.created" content="qua, 25 set 2013 10:23:31 GMT">
+	 <meta name="description" content="Trivenio - Agencia de gestÃ£o de projetos e contratos. Especializada em gestÃ£o de convÃªnios e contratos de repasse.">
+	 <meta name="keywords" content="gestÃ£o convÃªnios escritorio assessoria">
+	 <title>Protheus</title>
+	 <link rel="stylesheet" type="text/css" href="css/triv_estilo.css">
+	 <link rel="stylesheet" type="text/css" href="css/resets_css.css">
+	 <script src="fn/transpXML_v5.js" type="text/javascript"></script>
+	 <script src="fn/incluiMenu.js" type="text/javascript"></script>
+	 <script src="fn/incluiCabecalho.js" type="text/javascript"></script>
+	<script>
+		function salva() {
+			var t = document.getElementById("1input1").value;
+			var tt = t.split(",");
+			var n = tt[0];
+			var tit = tt[1];
+			var tPHP = "<\?php $xml=simplexml_load_file(\"xml/livros.xml\"); $xml->livro["+n+"]->addChild(\"numero\",\""+n+"\"); $xml->livro["+n+"]->addChild(\"titulo\",\""+tit+"\"); $xml->asXML('xml/livros.xml'); \?\>"
+			document.getElementById("col2").innerHTML = tPHP;
+		}	
+	</script>
+	 
+</head>
+<body onload="inclui('col1'), incluiC('cabecalho')">
+	<div id="cabecalho">
+
+	</div>
+	
+	<div id="wrapper">
+		<div id="col1">
+
+		</div>
+		
+		<div id="col2">
+			<input type="text" name="input1" id="1input1">entre o # do item e o novo titulo, separados por vÃ­rgula
+			<button onclick="salva()" >
+				salva
+			</button>
+			<h1>
+				teste de PHP abaixo
+			</h1>
+			tag do item principal:<b> livro</b><br>livro 0: 
+		
+		
+	<br>livro 1: 
+		
+		
+	<br>livro 2: 
+		
+		
+	<br>livro 3: 
+		
+		
+	<br>livro 4: 
+		
+		
+	<br>livro 5: 
+		
+		
+	<br>Nós do XML: 
+		
+		
+	<br>Nós do XML: 
+		
+		
+	<br>Nós do XML: 
+		
+		
+	<br>Nós do XML: 
+		
+		
+	<br>Nós do XML: 
+		
+		
+	<br>Nós do XML: 
+		
+		
+	<br><br><b>BIBLIOTECA</b> << nome do elemento root do XML<br>Título do Livro 0: Como utilizar AJAX<br>Preço: 10,00<br>Título do Livro 1: teste de acentuaÃ§Ã£o sÃ³ cÃ¢ixe<br>Preço: 83,00<br>Título do Livro 2: livro3<br>Preço: 8,00<br>Título do Livro 3: livro6<br>Preço: 18,00<br>Título do Livro 4: livro8<br>Preço: 42,50<br>Título do Livro 5: livro9<br>Preço: 23,25<br><br>462<br> >> teste de acesso a array<br> >> teste de acesso a XML como array<br>Como utilizar AJAX >> tenta ler child de livros<br>
+		
+		
+	 >> tenta retornar titulos em loop <br>
+		
+		
+	 >> tenta retornar titulos em loop <br>
+		
+		
+	 >> tenta retornar titulos em loop <br>
+		
+		
+	 >> tenta retornar titulos em loop <br>
+		
+		
+	 >> tenta retornar titulos em loop <br>
+		
+		
+	 >> tenta retornar titulos em loop <br>
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	<br><br><b>agora vai: Como utilizar AJAX</b><br> 
+		</div>
+	</div>
+</body>
+</html>
