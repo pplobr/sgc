@@ -6,6 +6,6 @@ primeiro repositório teste
 apenas para aprender a utilizar o Github
 
 
-não permite alteração publica. 
+learning to use github
 
 sgc testing
